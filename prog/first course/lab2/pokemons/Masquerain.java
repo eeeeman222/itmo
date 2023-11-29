@@ -11,10 +11,9 @@ public class Masquerain extends Pokemon {
         //pokemon_moves
 
         Confide confide = new Confide(0, 100);
-        Double_team double_team = new Double_team(0, 100);
-        Sweet_Scent sweet_scent = new Sweet_Scent(0, 100);
-        Stun_Spore stun_spore = new Stun_Spore(0, 75);
-        super.setMove(stun_spore);
-
+        Doubleteam doubleteam = new Double_team(0, 100);
+        SweetScent sweetscent = new Sweet_Scent(0, 100);
+        StunSpore stunspore = new Stun_Spore(0, 75);
+        super.setMove(stunspore, confide, doubleteam, sweetscent);
     }
 }
