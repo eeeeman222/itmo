@@ -3,7 +3,7 @@ package moves;
 import ru.ifmo.se.pokemon.*;
 
 public class Psychic extends SpecialMove {
-    public Psychic(double power, double acc) {
+    public psychic(double power, double acc) {
         super(Type.PSYCHIC, power, acc);
     }
     @Override
