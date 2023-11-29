@@ -2,7 +2,7 @@ package moves;
 import ru.ifmo.se.pokemon.*;
 
 public class Thunderbolt extends SpecialMove {
-    public Thunderbolt(double power, double acc){
+    public thunderbolt(double power, double acc){
         super(Type.ELECTRIC, power, acc);
     }
     @Override
