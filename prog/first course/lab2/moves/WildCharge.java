@@ -1,7 +1,7 @@
 package moves;
 import ru.ifmo.se.pokemon.*;
 public class WildCharge extends PhysicalMove{
-    public WildCharge(double power, double acc){
+    public wildCharge(double power, double acc){
         super(Type.ELECTRIC, power, acc);
     }
     @Override
