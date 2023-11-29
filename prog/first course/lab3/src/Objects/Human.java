@@ -3,7 +3,7 @@ package Objects;
 import Interfaces.Properties;
 import enums.Action;
 
-public class Human extends Alive implements Properties {
+public class Human extends Alive implements Properties, Time {
     static private String name;
     public static String name2 = name;
     @Override
