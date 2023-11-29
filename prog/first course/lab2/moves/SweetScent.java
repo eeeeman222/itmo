@@ -1,7 +1,7 @@
 package moves;
 import ru.ifmo.se.pokemon.*;
 public class SweetScent extends StatusMove {
-    public SweetScent(double power, double acc) {
+    public sweetScent(double power, double acc) {
         super(Type.NORMAL, power, acc);
     }
     @Override
