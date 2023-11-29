@@ -2,8 +2,8 @@ package moves;
 
 import ru.ifmo.se.pokemon.*;
 
-public class Double_team extends StatusMove {
-    public DoubleTeam(double power, double acc) {
+public class DoubleTeam extends StatusMove {
+    public doubleTeam(double power, double acc) {
         super(Type.NORMAL, power, acc);
     }
     @Override
