@@ -1,7 +1,7 @@
 package moves;
 import ru.ifmo.se.pokemon.*;
 public class Swagger extends StatusMove {
-    public Swagger(int power, int acc) {
+    public swagger(int power, int acc) {
         super(Type.NORMAL, power, acc);
     }
     protected void applyOppEffects(Pokemon opp) {
