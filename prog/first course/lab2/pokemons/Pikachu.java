@@ -4,7 +4,7 @@ import moves.Thunderbolt;
 import moves.Wild_Charge;
 import moves.Nuzzle;
 public class Pikachu extends Pokemon {
-    public Pikachu(String name, int lvl) {
+    public pikachu(String name, int lvl) {
         //pokemon_info
         super(name, lvl);
         super.setType(Type.ELECTRIC);
