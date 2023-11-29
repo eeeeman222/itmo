@@ -1,7 +1,7 @@
 package moves;
 import ru.ifmo.se.pokemon.*;
-public class Stun_Spore extends StatusMove {
-    public StunSpore(double power, double acc) {
+public class StunSpore extends StatusMove {
+    public stunSpore(double power, double acc) {
         super(Type.GRASS, power, acc);
     }
     @Override
