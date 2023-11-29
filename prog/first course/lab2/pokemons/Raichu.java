@@ -1,7 +1,7 @@
 package pokemons;
 import ru.ifmo.se.pokemon.*;
 import moves.Thunderbolt;
-import moves.Wild_Charge;
+import moves.WildCharge;
 import moves.Nuzzle;
 import moves.Swagger;
 public class Raichu extends Pokemon {
