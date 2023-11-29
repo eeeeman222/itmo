@@ -9,8 +9,8 @@ public class Pichu extends Pokemon {
 
         //pokemon_moves
 
-        Wild_Charge wild_charge = new Wild_Charge(90, 100);
+        Wild_Charge wildcharge = new WildCharge(90, 100);
         Thunderbolt thunderbolt = new Thunderbolt(90, 100);
-        super.setMove(wild_charge, thunderbolt);
+        super.setMove(wildcharge, thunderbolt);
     }
 }
