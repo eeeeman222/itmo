@@ -5,7 +5,7 @@ import moves.WildCharge;
 import moves.Nuzzle;
 import moves.Swagger;
 public class Raichu extends Pokemon {
-    public Raichu(String name, int lvl) {
+    public raichu(String name, int lvl) {
         super(name, lvl);
         super.setType(Type.ELECTRIC);
         super.setStats(60, 90, 55, 90, 80, 110);
