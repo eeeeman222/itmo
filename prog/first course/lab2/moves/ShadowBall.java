@@ -1,7 +1,7 @@
 package moves;
 import ru.ifmo.se.pokemon.*;
 public class ShadowBall extends SpecialMove{
-    public ShadowBall(double power, double acc){
+    public shadowBall(double power, double acc){
         super(Type.GHOST, power, acc);
     }
     @Override
