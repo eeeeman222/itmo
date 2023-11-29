@@ -1,7 +1,7 @@
 package moves;
 import ru.ifmo.se.pokemon.*;
 public class Stun_Spore extends StatusMove {
-    public Stun_Spore(double power, double acc) {
+    public StunSpore(double power, double acc) {
         super(Type.GRASS, power, acc);
     }
     @Override
@@ -12,6 +12,6 @@ public class Stun_Spore extends StatusMove {
     }
     @Override
     protected java.lang.String describe() {
-        return "применяет Stun Spores и пытается парализовать оппонента!!!";
+        return "применяет Stun Spore и пытается парализовать оппонента!!!";
     }
 }
