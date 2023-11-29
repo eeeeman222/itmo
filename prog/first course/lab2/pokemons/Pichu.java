@@ -1,7 +1,7 @@
 import ru.ifmo.se.pokemon.*;
 import moves.*
 public class Pichu extends Pokemon {
-    public Pichu(String name, int lvl) {
+    public pichu(String name, int lvl) {
         //pokemon_info
         super(name, lvl);
         super.setType(Type.ELECTRIC);
