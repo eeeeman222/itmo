@@ -7,7 +7,7 @@ import moves.Thunderbolt;
 import ru.ifmo.se.pokemon.*;
 
 public class Uxie extends Pokemon {
-    public Uxie(String name, int lvl){
+    public uxie(String name, int lvl){
         //pokemon_info
         super(name, lvl);
         super.setType(Type.PSYCHIC);
