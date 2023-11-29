@@ -2,7 +2,7 @@ package pokemons;
 import ru.ifmo.se.pokemon.*;
 import moves.*;
 public class Masquerain extends Pokemon {
-    public Masquerain(String name, int lvl) {
+    public masquerain(String name, int lvl) {
         //pokemon_info
         super(name, lvl);
         super.setType(Type.BUG, Type.FLYING);
