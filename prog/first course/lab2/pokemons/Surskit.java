@@ -2,11 +2,11 @@ package pokemons;
 import moves.Thunderbolt;
 import ru.ifmo.se.pokemon.*;
 import moves.Confide;
-import moves.Sweet_Scent;
-import moves.Double_team;
+import moves.SweetScent;
+import moves.Doubleteam;
 
 public class Surskit extends Pokemon {
-    public Surskit(String name, int lvl) {
+    public surskit(String name, int lvl) {
         //pokemon_info
         super(name, lvl);
         super.setType(Type.BUG, Type.WATER);
@@ -15,9 +15,9 @@ public class Surskit extends Pokemon {
         //pokemon_moves
 
         Confide confide = new Confide(0,100);
-        Sweet_Scent sweet_scent = new Sweet_Scent(0, 100);
-        Double_team double_team = new Double_team(0, 100);
-        super.setMove(sweet_scent, confide, double_team);
+        SweetScent sweetscent = new SweetScent(0, 100);
+        Doubleteam doubleteam = new Doubleteam(0, 100);
+        super.setMove(sweetscent, confide, doubleteam);
     }
 
 }
