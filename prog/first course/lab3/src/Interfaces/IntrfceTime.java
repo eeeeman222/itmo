@@ -1,5 +1,5 @@
 package Interfaces;
 
-public interface Time {
+public interface IntrfceTime {
     public void time(String clock);
 }
