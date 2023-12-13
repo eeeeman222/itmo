@@ -25,10 +25,6 @@ public class Human extends Alive implements Properties, Time {
     public void prop(String proper){
         name2 = name + " " + proper;
     }
-
-    public void prop2(String proper){
-        name2 = proper + " " + name;
-    }
     public void activity(Action act){
         if (act == Action.NOSURPRISE) {
             System.out.println(name2 + " не удивилась.");
