@@ -20,9 +20,6 @@ public class Rabbit extends Alive implements Properties {
     public void prop(String proper){
         name2 = name + " " + proper;
     }
-    public void prop2(String proper){
-        name2 = proper + " " + name;
-    }
 
     @Override
     public int hashCode() {
