@@ -25,6 +25,7 @@ public class Human extends Alive implements Properties, Time {
     public void prop(String proper){
         name2 = name + " " + proper;
     }
+    @Override
     public void activity(Action act){
         if (act == Action.NOSURPRISE) {
             System.out.println(name2 + " не удивилась.");
@@ -41,7 +42,7 @@ public class Human extends Alive implements Properties, Time {
         }
         System.out.println(b + ".");
     }
-
+    @Override
     public void txtact(Action act, String str){
         if(act == Action.THINK){
             System.out.println(name2 + "подумала, что " + str);
