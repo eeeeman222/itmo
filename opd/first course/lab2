@@ -13,7 +13,7 @@ echo Invisibility=0 Phasing=0 >> gastly
 touch electrode
 echo satk=8 sdef=8 > electrode
 echo spd=14 >> electrode
-cd .. 
+cd ..
 touch dratini0 
 echo Тип диеты > dratini0
 echo Omnivore >> dratini0
