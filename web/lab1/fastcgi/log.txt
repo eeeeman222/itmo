@@ -1,0 +1,4 @@
+дек. 03, 2024 1:28:20 AM Main <clinit>
+INFO: Logger initialized
+дек. 03, 2024 1:28:20 AM ProxyHandler handleRequest
+INFO: srartinterface

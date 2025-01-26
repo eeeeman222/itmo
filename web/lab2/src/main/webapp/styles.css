@@ -1,0 +1,131 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 30px;
+    color: #212121;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e126b5;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #e126b5;
+    font-weight: bold;
+}
+
+a {
+    font-size: 16px;
+    color: #e126b5;
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 2px solid #e126b5;
+}
+
+th {
+    background-color: #e126b5;
+    color: #e0f2f1;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 0;
+    color: #e126b5;
+    font-weight: normal;
+}
+
+.checkbox-group {
+    margin: 15px 0;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin: 8px 0;
+    border: 2px solid #e126b5;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #e126b5;
+}
+
+button {
+    background-color: #e126b5;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #e126b5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Центровка контейнера */
+.centered-container {
+    display: flex; /* Flexbox для центровки */
+    justify-content: center; /* Горизонтальное выравнивание */
+    align-items: center; /* Вертикальное выравнивание */
+    height: 100vh; /* Высота контейнера на весь экран */
+    background-color: #e126b5; /* Фон для красоты */
+}
+
+/* Стили кнопки */
+.button {
+    display: inline-block; /* Делает ссылку блочным элементом */
+    background-color: #e126b5; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 10px 20px; /* Внутренние отступы */
+    text-align: center; /* Центрирование текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Скругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Указатель-рука при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+/* Эффект при наведении */
+.button:hover {
+    background-color: #e126b5; /* Темнее при наведении */
+}
+
+
+canvas {
+    border: 1px solid #333;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}

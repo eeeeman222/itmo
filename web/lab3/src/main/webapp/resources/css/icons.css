@@ -1,0 +1,12 @@
+.icon-button {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 24px;
+    background: #ecd1d1;
+    border: black;
+    padding: 0;
+    cursor: pointer;
+    color: #e80fb6;
+    text-decoration: none;
+    display: inline-block;
+  }
