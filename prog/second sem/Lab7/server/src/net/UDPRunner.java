@@ -24,7 +24,7 @@ import java.util.logging.Logger;
 
 /**
  * UDP обработчик запросов
- * @author maxbarsukov
+ * @author ***********
  */
 abstract class UDPRunner {
     private static final int READ_POOL_SIZE = 4;
