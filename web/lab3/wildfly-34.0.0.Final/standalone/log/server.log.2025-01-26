@@ -1,0 +1,26 @@
+2025-01-26 15:18:35,731 INFO  [stdout] (default task-4) [EL Fine]: sql: 2025-01-26 15:18:35.725--ServerSession(844682544)--Connection(181696996)--Thread(Thread[default task-4,5,main])--SELECT ID, R, RESULT, X, Y FROM POINT
+2025-01-26 15:18:36,903 INFO  [stdout] (default task-6) in checkAndAddPoint()
+2025-01-26 15:18:36,903 INFO  [stdout] (default task-6) 
+2025-01-26 15:18:36,916 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:36.916--ClientSession(759211879)--Connection(181696996)--Thread(Thread[default task-6,5,main])--INSERT INTO POINT (R, RESULT, X, Y) VALUES (?, ?, ?, ?)
+2025-01-26 15:18:36,929 INFO  [stdout] (default task-6) 	bind => [1.0, true, 0.204, 0.15]
+2025-01-26 15:18:36,938 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:36.938--ClientSession(759211879)--Connection(181696996)--Thread(Thread[default task-6,5,main])--select lastval()
+2025-01-26 15:18:37,479 INFO  [stdout] (default task-6) in checkAndAddPoint()
+2025-01-26 15:18:37,479 INFO  [stdout] (default task-6) 
+2025-01-26 15:18:37,480 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:37.48--ClientSession(58071669)--Connection(181696996)--Thread(Thread[default task-6,5,main])--INSERT INTO POINT (R, RESULT, X, Y) VALUES (?, ?, ?, ?)
+2025-01-26 15:18:37,480 INFO  [stdout] (default task-6) 	bind => [1.0, true, 0.191, -0.237]
+2025-01-26 15:18:37,481 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:37.481--ClientSession(58071669)--Connection(181696996)--Thread(Thread[default task-6,5,main])--select lastval()
+2025-01-26 15:18:39,899 INFO  [stdout] (default task-6) in checkAndAddPoint()
+2025-01-26 15:18:39,900 INFO  [stdout] (default task-6) 
+2025-01-26 15:18:39,902 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:39.902--ClientSession(1685785598)--Connection(181696996)--Thread(Thread[default task-6,5,main])--INSERT INTO POINT (R, RESULT, X, Y) VALUES (?, ?, ?, ?)
+2025-01-26 15:18:39,902 INFO  [stdout] (default task-6) 	bind => [1.0, false, 0.654, 0.6]
+2025-01-26 15:18:39,908 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:39.907--ClientSession(1685785598)--Connection(181696996)--Thread(Thread[default task-6,5,main])--select lastval()
+2025-01-26 15:18:40,466 INFO  [stdout] (default task-6) in checkAndAddPoint()
+2025-01-26 15:18:40,466 INFO  [stdout] (default task-6) 
+2025-01-26 15:18:40,467 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:40.467--ClientSession(1387753374)--Connection(181696996)--Thread(Thread[default task-6,5,main])--INSERT INTO POINT (R, RESULT, X, Y) VALUES (?, ?, ?, ?)
+2025-01-26 15:18:40,467 INFO  [stdout] (default task-6) 	bind => [1.0, false, -0.484, 0.325]
+2025-01-26 15:18:40,468 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:40.468--ClientSession(1387753374)--Connection(181696996)--Thread(Thread[default task-6,5,main])--select lastval()
+2025-01-26 15:18:41,097 INFO  [stdout] (default task-6) in checkAndAddPoint()
+2025-01-26 15:18:41,097 INFO  [stdout] (default task-6) 
+2025-01-26 15:18:41,098 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:41.098--ClientSession(13665754)--Connection(181696996)--Thread(Thread[default task-6,5,main])--INSERT INTO POINT (R, RESULT, X, Y) VALUES (?, ?, ?, ?)
+2025-01-26 15:18:41,098 INFO  [stdout] (default task-6) 	bind => [1.0, true, 0.304, -0.263]
+2025-01-26 15:18:41,099 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:41.099--ClientSession(13665754)--Connection(181696996)--Thread(Thread[default task-6,5,main])--select lastval()

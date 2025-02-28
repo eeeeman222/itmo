@@ -532,7 +532,7 @@
     </socket-binding-group>
     <deployments>
         <deployment name="lab3.war" runtime-name="lab3.war">
-            <fs-archive path="/Users/nokia208dualsim/IdeaProjects/lab3/target/lab3.war"/>
+            <fs-archive path="/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/target/lab3.war"/>
         </deployment>
     </deployments>
 </server>

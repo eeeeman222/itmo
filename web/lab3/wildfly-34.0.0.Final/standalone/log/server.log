@@ -1,26 +1,1003 @@
-2025-01-26 15:18:35,731 INFO  [stdout] (default task-4) [EL Fine]: sql: 2025-01-26 15:18:35.725--ServerSession(844682544)--Connection(181696996)--Thread(Thread[default task-4,5,main])--SELECT ID, R, RESULT, X, Y FROM POINT
-2025-01-26 15:18:36,903 INFO  [stdout] (default task-6) in checkAndAddPoint()
-2025-01-26 15:18:36,903 INFO  [stdout] (default task-6) 
-2025-01-26 15:18:36,916 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:36.916--ClientSession(759211879)--Connection(181696996)--Thread(Thread[default task-6,5,main])--INSERT INTO POINT (R, RESULT, X, Y) VALUES (?, ?, ?, ?)
-2025-01-26 15:18:36,929 INFO  [stdout] (default task-6) 	bind => [1.0, true, 0.204, 0.15]
-2025-01-26 15:18:36,938 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:36.938--ClientSession(759211879)--Connection(181696996)--Thread(Thread[default task-6,5,main])--select lastval()
-2025-01-26 15:18:37,479 INFO  [stdout] (default task-6) in checkAndAddPoint()
-2025-01-26 15:18:37,479 INFO  [stdout] (default task-6) 
-2025-01-26 15:18:37,480 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:37.48--ClientSession(58071669)--Connection(181696996)--Thread(Thread[default task-6,5,main])--INSERT INTO POINT (R, RESULT, X, Y) VALUES (?, ?, ?, ?)
-2025-01-26 15:18:37,480 INFO  [stdout] (default task-6) 	bind => [1.0, true, 0.191, -0.237]
-2025-01-26 15:18:37,481 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:37.481--ClientSession(58071669)--Connection(181696996)--Thread(Thread[default task-6,5,main])--select lastval()
-2025-01-26 15:18:39,899 INFO  [stdout] (default task-6) in checkAndAddPoint()
-2025-01-26 15:18:39,900 INFO  [stdout] (default task-6) 
-2025-01-26 15:18:39,902 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:39.902--ClientSession(1685785598)--Connection(181696996)--Thread(Thread[default task-6,5,main])--INSERT INTO POINT (R, RESULT, X, Y) VALUES (?, ?, ?, ?)
-2025-01-26 15:18:39,902 INFO  [stdout] (default task-6) 	bind => [1.0, false, 0.654, 0.6]
-2025-01-26 15:18:39,908 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:39.907--ClientSession(1685785598)--Connection(181696996)--Thread(Thread[default task-6,5,main])--select lastval()
-2025-01-26 15:18:40,466 INFO  [stdout] (default task-6) in checkAndAddPoint()
-2025-01-26 15:18:40,466 INFO  [stdout] (default task-6) 
-2025-01-26 15:18:40,467 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:40.467--ClientSession(1387753374)--Connection(181696996)--Thread(Thread[default task-6,5,main])--INSERT INTO POINT (R, RESULT, X, Y) VALUES (?, ?, ?, ?)
-2025-01-26 15:18:40,467 INFO  [stdout] (default task-6) 	bind => [1.0, false, -0.484, 0.325]
-2025-01-26 15:18:40,468 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:40.468--ClientSession(1387753374)--Connection(181696996)--Thread(Thread[default task-6,5,main])--select lastval()
-2025-01-26 15:18:41,097 INFO  [stdout] (default task-6) in checkAndAddPoint()
-2025-01-26 15:18:41,097 INFO  [stdout] (default task-6) 
-2025-01-26 15:18:41,098 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:41.098--ClientSession(13665754)--Connection(181696996)--Thread(Thread[default task-6,5,main])--INSERT INTO POINT (R, RESULT, X, Y) VALUES (?, ?, ?, ?)
-2025-01-26 15:18:41,098 INFO  [stdout] (default task-6) 	bind => [1.0, true, 0.304, -0.263]
-2025-01-26 15:18:41,099 INFO  [stdout] (default task-6) [EL Fine]: sql: 2025-01-26 15:18:41.099--ClientSession(13665754)--Connection(181696996)--Thread(Thread[default task-6,5,main])--select lastval()
+2025-02-13 18:21:14,428 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/deployments
+2025-02-13 18:21:14,429 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2025-02-13 18:21:14,446 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-02-13 18:21:14,446 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/PostgresDS]
+2025-02-13 18:21:14,477 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 7.2.0.Final (Apache CXF 4.0.5) 
+2025-02-13 18:21:14,706 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 18:21:14,709 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = pgJDBC 42.7.5.jar
+2025-02-13 18:21:15,509 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for PostgresPU
+2025-02-13 18:21:15,582 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0003: Starting Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 18:21:15,634 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Fine]: server: 2025-02-13 18:21:15.629--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+2025-02-13 18:21:15,672 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:21:15.672--ServerSession(1047562707)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The access type for the persistent class [class se.ifmo.db.Point] is set to [FIELD].
+2025-02-13 18:21:15,676 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:21:15.676--ServerSession(1047562707)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The alias name for the entity class [class se.ifmo.db.Point] is being defaulted to: Point.
+2025-02-13 18:21:15,676 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:21:15.676--ServerSession(1047562707)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The table name for entity [class se.ifmo.db.Point] is being defaulted to: POINT.
+2025-02-13 18:21:15,679 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:21:15.679--ServerSession(1047562707)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [result] is being defaulted to: RESULT.
+2025-02-13 18:21:15,679 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:21:15.679--ServerSession(1047562707)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [r] is being defaulted to: R.
+2025-02-13 18:21:15,679 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:21:15.679--ServerSession(1047562707)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [x] is being defaulted to: X.
+2025-02-13 18:21:15,679 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:21:15.679--ServerSession(1047562707)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [y] is being defaulted to: Y.
+2025-02-13 18:21:15,679 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:21:15.679--ServerSession(1047562707)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [id] is being defaulted to: ID.
+2025-02-13 18:21:15,693 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment lab3.war
+2025-02-13 18:21:15,792 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 8.0.1.Final
+2025-02-13 18:21:15,899 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 18:21:15,910 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 5.1.3 (Final)
+2025-02-13 18:21:15,929 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 18:21:16,369 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 82) Initializing Mojarra 4.0.7 for context '/lab3'
+2025-02-13 18:21:16,587 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/lab3' for server 'default-server'
+2025-02-13 18:21:16,606 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "lab3.war" (runtime-name : "lab3.war")
+2025-02-13 18:21:16,606 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "pgJDBC 42.7.5.jar" (runtime-name : "pgJDBC 42.7.5.jar")
+2025-02-13 18:21:16,621 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-02-13 18:21:16,623 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2025-02-13 18:21:16,623 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2025-02-13 18:21:16,624 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 34.0.0.Final (WildFly Core 26.0.1.Final) started in 3348ms - Started 490 of 694 services (330 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2025-02-13 18:21:16,870 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 18:21:16,871 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0022: Unregistered web context: '/lab3' from server 'default-server'
+2025-02-13 18:21:16,895 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 16) WFLYJPA0004: Stopping Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 18:21:16,903 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment lab3.war (runtime-name: lab3.war) in 34ms
+2025-02-13 18:21:16,922 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "lab3.war" (runtime-name: "lab3.war")
+2025-02-13 18:21:16,957 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "lab3.war" (runtime-name: "lab3.war")
+2025-02-13 18:21:17,775 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for PostgresPU
+2025-02-13 18:21:17,827 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0003: Starting Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 18:21:17,866 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Fine]: server: 2025-02-13 18:21:17.863--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+2025-02-13 18:21:17,893 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:21:17.893--ServerSession(93287121)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The access type for the persistent class [class se.ifmo.db.Point] is set to [FIELD].
+2025-02-13 18:21:17,897 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:21:17.897--ServerSession(93287121)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The alias name for the entity class [class se.ifmo.db.Point] is being defaulted to: Point.
+2025-02-13 18:21:17,897 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:21:17.897--ServerSession(93287121)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The table name for entity [class se.ifmo.db.Point] is being defaulted to: POINT.
+2025-02-13 18:21:17,900 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:21:17.9--ServerSession(93287121)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The column name for element [result] is being defaulted to: RESULT.
+2025-02-13 18:21:17,900 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:21:17.9--ServerSession(93287121)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The column name for element [r] is being defaulted to: R.
+2025-02-13 18:21:17,900 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:21:17.9--ServerSession(93287121)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The column name for element [x] is being defaulted to: X.
+2025-02-13 18:21:17,900 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:21:17.9--ServerSession(93287121)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The column name for element [y] is being defaulted to: Y.
+2025-02-13 18:21:17,900 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:21:17.9--ServerSession(93287121)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The column name for element [id] is being defaulted to: ID.
+2025-02-13 18:21:17,907 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment lab3.war
+2025-02-13 18:21:17,951 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 18:21:17,962 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 18:21:18,058 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 82) Initializing Mojarra 4.0.7 for context '/lab3'
+2025-02-13 18:21:18,173 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/lab3' for server 'default-server'
+2025-02-13 18:21:18,180 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "lab3.war" (runtime-name : "lab3.war")
+2025-02-13 18:21:22,470 INFO  [stdout] (default task-1) [EL Warning]: transaction: 2025-02-13 18:21:22.469--ServerSession(93287121)--Thread(Thread[default task-1,5,main])--PersistenceUnitInfo PostgresPU has transactionType RESOURCE_LOCAL and therefore jtaDataSource will be ignored
+2025-02-13 18:21:22,471 INFO  [stdout] (default task-1) [EL Info]: 2025-02-13 18:21:22.471--ServerSession(93287121)--Thread(Thread[default task-1,5,main])--EclipseLink, version: Eclipse Persistence Services - 3.0.3.v202208191135
+2025-02-13 18:21:22,489 INFO  [stdout] (default task-1) [EL Severe]: ejb: 2025-02-13 18:21:22.488--ServerSession(93287121)--Thread(Thread[default task-1,5,main])--Exception [EclipseLink-4002] (Eclipse Persistence Services - 3.0.3.v202208191135): org.eclipse.persistence.exceptions.DatabaseException
+2025-02-13 18:21:22,489 INFO  [stdout] (default task-1) Internal Exception: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5555 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+2025-02-13 18:21:22,489 INFO  [stdout] (default task-1) Error Code: 0
+2025-02-13 18:21:22,489 SEVERE [jakarta.enterprise.resource.webcontainer.faces.application] (default task-1) Error Rendering View[/main.xhtml]: jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 3.0.3.v202208191135): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5555 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+Error Code: 0
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:860)
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:222)
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:330)
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:350)
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:313)
+	at org.jboss.as.jpa@34.0.0.Final//org.jboss.as.jpa.container.TransactionScopedEntityManager.createEntityManager(TransactionScopedEntityManager.java:170)
+	at org.jboss.as.jpa@34.0.0.Final//org.jboss.as.jpa.container.TransactionScopedEntityManager.getEntityManager(TransactionScopedEntityManager.java:74)
+	at org.jboss.as.jpa@34.0.0.Final//org.jboss.as.jpa.container.AbstractEntityManager.createQuery(AbstractEntityManager.java:118)
+	at deployment.lab3.war//se.ifmo.mbeans.PointBean.loadPointsFromDatabase(PointBean.java:51)
+	at deployment.lab3.war//se.ifmo.mbeans.PointBean$Proxy$_$$_WeldSubclass.loadPointsFromDatabase(Unknown Source)
+	at deployment.lab3.war//se.ifmo.mbeans.PointBean.init(PointBean.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:77)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.proxy.WeldInvocationContextImpl.invokeNext(WeldInvocationContextImpl.java:103)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.proxy.WeldInvocationContextImpl.proceed(WeldInvocationContextImpl.java:133)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeLifecycleInterception(InterceptorMethodHandler.java:82)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:75)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:48)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:85)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:61)
+	at deployment.lab3.war//se.ifmo.mbeans.PointBean$Proxy$_$$_WeldSubclass.lifecycle_mixin_$$_postConstruct(Unknown Source)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.util.InterceptionUtils.executePostConstruct(InterceptionUtils.java:44)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.util.InterceptionUtils.executePostConstruct(InterceptionUtils.java:56)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.postConstruct(DefaultLifecycleCallbackInvoker.java:66)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.injection.producer.BasicInjectionTarget.postConstruct(BasicInjectionTarget.java:131)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:168)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.util.bean.IsolatedForwardingBean.create(IsolatedForwardingBean.java:45)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.contexts.PassivatingContextWrapper$AbstractPassivatingContextWrapper.get(PassivatingContextWrapper.java:84)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:106)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.bean.ContextualInstanceStrategy$CachingContextualInstanceStrategy.get(ContextualInstanceStrategy.java:192)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.manager.BeanManagerImpl.getReference(BeanManagerImpl.java:706)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.module.web.el.AbstractWeldELResolver.lookup(AbstractWeldELResolver.java:107)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.module.web.el.AbstractWeldELResolver.getValue(AbstractWeldELResolver.java:90)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:139)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:164)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.parser.AstIdentifier.getValue(AstIdentifier.java:97)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.parser.AstValue.getBase(AstValue.java:314)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.parser.AstValue.getValue(AstValue.java:140)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.ValueExpressionImpl.getValue(ValueExpressionImpl.java:138)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.module.web.el.WeldValueExpression.getValue(WeldValueExpression.java:50)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:73)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:206)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:175)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIOutput.getValue(UIOutput.java:134)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIInput.getValue(UIInput.java:287)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.renderkit.html_basic.MenuRenderer.getCurrentSelectedValues(MenuRenderer.java:489)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.renderkit.html_basic.SelectManyCheckboxListRenderer.encodeEnd(SelectManyCheckboxListRenderer.java:90)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.renderkit.html_basic.RadioRenderer.encodeEnd(RadioRenderer.java:109)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:585)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1442)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.render.Renderer.encodeChildren(Renderer.java:146)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:556)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1435)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:449)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:160)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:125)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:93)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:150)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:692)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.6.0.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.6.0.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.0.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:51)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: Exception [EclipseLink-4002] (Eclipse Persistence Services - 3.0.3.v202208191135): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5555 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+Error Code: 0
+	at deployment.lab3.war//org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:334)
+	at deployment.lab3.war//org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:329)
+	at deployment.lab3.war//org.eclipse.persistence.sessions.DefaultConnector.connect(DefaultConnector.java:142)
+	at deployment.lab3.war//org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:172)
+	at deployment.lab3.war//org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.setOrDetectDatasource(DatabaseSessionImpl.java:226)
+	at deployment.lab3.war//org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:808)
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:261)
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:771)
+	... 110 more
+Caused by: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5555 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+	at deployment.lab3.war//org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:346)
+	at deployment.lab3.war//org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at deployment.lab3.war//org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at deployment.lab3.war//org.postgresql.Driver.makeConnection(Driver.java:446)
+	at deployment.lab3.war//org.postgresql.Driver.connect(Driver.java:298)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:190)
+	at deployment.lab3.war//org.eclipse.persistence.sessions.DefaultConnector.connect(DefaultConnector.java:102)
+	... 115 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at deployment.lab3.war//org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at deployment.lab3.war//org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at deployment.lab3.war//org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at deployment.lab3.war//org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 122 more
+
+2025-02-13 18:21:22,491 ERROR [io.undertow.request] (default task-1) UT005023: Exception handling request to /lab3/main.xhtml: jakarta.servlet.ServletException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 3.0.3.v202208191135): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5555 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+Error Code: 0
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:709)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.lambda$handleRequest$1(ElytronRunAsHandler.java:68)
+	at org.wildfly.security.elytron-base@2.6.0.Final//org.wildfly.security.auth.server.FlexibleIdentityAssociation.runAsFunctionEx(FlexibleIdentityAssociation.java:103)
+	at org.wildfly.security.elytron-base@2.6.0.Final//org.wildfly.security.auth.server.Scoped.runAsFunctionEx(Scoped.java:161)
+	at org.wildfly.security.elytron-base@2.6.0.Final//org.wildfly.security.auth.server.Scoped.runAs(Scoped.java:73)
+	at org.wildfly.security.elytron-web.undertow-server@4.1.0.Final//org.wildfly.elytron.web.undertow.server.ElytronRunAsHandler.handleRequest(ElytronRunAsHandler.java:67)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.core@2.3.18.Final//io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at org.wildfly.security.elytron-web.undertow-server-servlet@4.1.0.Final//org.wildfly.elytron.web.undertow.server.servlet.CleanUpHandler.handleRequest(CleanUpHandler.java:38)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:44)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:51)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at org.wildfly.extension.undertow@34.0.0.Final//org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1421)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet@2.3.18.Final//io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.core@2.3.18.Final//io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads@2.4.0.Final//org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at org.jboss.xnio@3.8.16.Final//org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: jakarta.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 3.0.3.v202208191135): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5555 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+Error Code: 0
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:860)
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:222)
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.createEntityManagerImpl(EntityManagerFactoryDelegate.java:330)
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManagerImpl(EntityManagerFactoryImpl.java:350)
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:313)
+	at org.jboss.as.jpa@34.0.0.Final//org.jboss.as.jpa.container.TransactionScopedEntityManager.createEntityManager(TransactionScopedEntityManager.java:170)
+	at org.jboss.as.jpa@34.0.0.Final//org.jboss.as.jpa.container.TransactionScopedEntityManager.getEntityManager(TransactionScopedEntityManager.java:74)
+	at org.jboss.as.jpa@34.0.0.Final//org.jboss.as.jpa.container.AbstractEntityManager.createQuery(AbstractEntityManager.java:118)
+	at deployment.lab3.war//se.ifmo.mbeans.PointBean.loadPointsFromDatabase(PointBean.java:51)
+	at deployment.lab3.war//se.ifmo.mbeans.PointBean$Proxy$_$$_WeldSubclass.loadPointsFromDatabase(Unknown Source)
+	at deployment.lab3.war//se.ifmo.mbeans.PointBean.init(PointBean.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.reader.SimpleInterceptorInvocation$SimpleMethodInvocation.invoke(SimpleInterceptorInvocation.java:77)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.proxy.WeldInvocationContextImpl.invokeNext(WeldInvocationContextImpl.java:103)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.proxy.WeldInvocationContextImpl.proceed(WeldInvocationContextImpl.java:133)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeLifecycleInterception(InterceptorMethodHandler.java:82)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.executeInterception(InterceptorMethodHandler.java:75)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.proxy.InterceptorMethodHandler.invoke(InterceptorMethodHandler.java:48)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:85)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.bean.proxy.CombinedInterceptorAndDecoratorStackMethodHandler.invoke(CombinedInterceptorAndDecoratorStackMethodHandler.java:61)
+	at deployment.lab3.war//se.ifmo.mbeans.PointBean$Proxy$_$$_WeldSubclass.lifecycle_mixin_$$_postConstruct(Unknown Source)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.util.InterceptionUtils.executePostConstruct(InterceptionUtils.java:44)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.interceptor.util.InterceptionUtils.executePostConstruct(InterceptionUtils.java:56)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.injection.producer.DefaultLifecycleCallbackInvoker.postConstruct(DefaultLifecycleCallbackInvoker.java:66)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.injection.producer.BasicInjectionTarget.postConstruct(BasicInjectionTarget.java:131)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:168)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.util.bean.IsolatedForwardingBean.create(IsolatedForwardingBean.java:45)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.contexts.AbstractContext.get(AbstractContext.java:96)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.contexts.PassivatingContextWrapper$AbstractPassivatingContextWrapper.get(PassivatingContextWrapper.java:84)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.bean.ContextualInstanceStrategy$DefaultContextualInstanceStrategy.get(ContextualInstanceStrategy.java:106)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.bean.ContextualInstanceStrategy$CachingContextualInstanceStrategy.get(ContextualInstanceStrategy.java:192)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.bean.ContextualInstance.get(ContextualInstance.java:50)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.manager.BeanManagerImpl.getReference(BeanManagerImpl.java:706)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.module.web.el.AbstractWeldELResolver.lookup(AbstractWeldELResolver.java:107)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.module.web.el.AbstractWeldELResolver.getValue(AbstractWeldELResolver.java:90)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:139)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:164)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.parser.AstIdentifier.getValue(AstIdentifier.java:97)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.parser.AstValue.getBase(AstValue.java:314)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.parser.AstValue.getValue(AstValue.java:140)
+	at org.glassfish.expressly@5.0.0//org.glassfish.expressly.ValueExpressionImpl.getValue(ValueExpressionImpl.java:138)
+	at org.jboss.weld.core@5.1.3.Final//org.jboss.weld.module.web.el.WeldValueExpression.getValue(WeldValueExpression.java:50)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:73)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:206)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:175)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIOutput.getValue(UIOutput.java:134)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIInput.getValue(UIInput.java:287)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.renderkit.html_basic.MenuRenderer.getCurrentSelectedValues(MenuRenderer.java:489)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.renderkit.html_basic.SelectManyCheckboxListRenderer.encodeEnd(SelectManyCheckboxListRenderer.java:90)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.renderkit.html_basic.RadioRenderer.encodeEnd(RadioRenderer.java:109)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:585)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1442)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.render.Renderer.encodeChildren(Renderer.java:146)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:556)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1435)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.component.UIComponent.encodeAll(UIComponent.java:1438)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:449)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:160)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:125)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:93)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+	at jakarta.faces.impl@4.0.7//com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:150)
+	at jakarta.faces.impl@4.0.7//jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:692)
+	... 44 more
+Caused by: Exception [EclipseLink-4002] (Eclipse Persistence Services - 3.0.3.v202208191135): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5555 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+Error Code: 0
+	at deployment.lab3.war//org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:334)
+	at deployment.lab3.war//org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:329)
+	at deployment.lab3.war//org.eclipse.persistence.sessions.DefaultConnector.connect(DefaultConnector.java:142)
+	at deployment.lab3.war//org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:172)
+	at deployment.lab3.war//org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.setOrDetectDatasource(DatabaseSessionImpl.java:226)
+	at deployment.lab3.war//org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:808)
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:261)
+	at deployment.lab3.war//org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:771)
+	... 110 more
+Caused by: org.postgresql.util.PSQLException: Подсоединение по адресу localhost:5555 отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+	at deployment.lab3.war//org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:346)
+	at deployment.lab3.war//org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at deployment.lab3.war//org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at deployment.lab3.war//org.postgresql.Driver.makeConnection(Driver.java:446)
+	at deployment.lab3.war//org.postgresql.Driver.connect(Driver.java:298)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:190)
+	at deployment.lab3.war//org.eclipse.persistence.sessions.DefaultConnector.connect(DefaultConnector.java:102)
+	... 115 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at deployment.lab3.war//org.postgresql.core.PGStream.createSocket(PGStream.java:243)
+	at deployment.lab3.war//org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at deployment.lab3.war//org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
+	at deployment.lab3.war//org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
+	... 122 more
+
+2025-02-13 18:21:57,104 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0272: Suspending server
+2025-02-13 18:21:57,109 INFO  [org.jboss.as.ejb3] (management-handler-thread - 1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-02-13 18:21:57,115 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2025-02-13 18:21:57,121 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = pgJDBC 42.7.5.jar
+2025-02-13 18:21:57,127 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 18:21:57,130 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = postgres
+2025-02-13 18:21:57,131 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2025-02-13 18:21:57,132 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 85) WFLYUT0022: Unregistered web context: '/lab3' from server 'default-server'
+2025-02-13 18:21:57,142 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment pgJDBC 42.7.5.jar (runtime-name: pgJDBC 42.7.5.jar) in 15ms
+2025-02-13 18:21:57,147 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2025-02-13 18:21:57,149 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2025-02-13 18:21:57,150 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2025-02-13 18:21:57,150 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 88) WFLYJPA0004: Stopping Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 18:21:57,151 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/PostgresDS]
+2025-02-13 18:21:57,151 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = postgresql
+2025-02-13 18:21:57,152 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2025-02-13 18:21:57,152 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTP listener default suspending
+2025-02-13 18:21:57,152 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2025-02-13 18:21:57,152 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2025-02-13 18:21:57,153 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.3.18.Final stopping
+2025-02-13 18:21:57,157 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment lab3.war (runtime-name: lab3.war) in 30ms
+2025-02-13 18:21:57,159 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly 34.0.0.Final (WildFly Core 26.0.1.Final) stopped in 35ms
+2025-02-13 18:21:59,382 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.5.Final
+2025-02-13 18:21:59,665 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
+2025-02-13 18:21:59,669 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2025-02-13 18:21:59,726 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly 34.0.0.Final (WildFly Core 26.0.1.Final) starting
+2025-02-13 18:21:59,727 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/xy/72t2pzgx7bl70lc537_wphz40000gn/T/
+	java.library.path = /Users/nokia208dualsim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.8.1+1
+	java.security.manager = allow
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.8.1+1
+	java.version = 17.0.8.1
+	java.version.date = 2023-08-24
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.8.1+1
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final
+	jboss.host.name = macbook-air-nokia
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = macbook-air-nokia
+	jboss.qualified.host.name = macbook-air-nokia.local
+	jboss.server.base.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone
+	jboss.server.config.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration
+	jboss.server.data.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/data
+	jboss.server.log.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/log
+	jboss.server.name = macbook-air-nokia
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/tmp
+	jdk.debug = release
+	jdk.serialFilter = maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000
+	line.separator = 
+
+	logging.configuration = file:/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration/logging.properties
+	module.path = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = aarch64
+	os.name = Mac OS X
+	os.version = 14.2.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/jboss-modules.jar -mp /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final -Djboss.server.base.dir=/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = RU
+	user.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/bin
+	user.home = /Users/nokia208dualsim
+	user.language = ru
+	user.name = nokia208dualsim
+	user.timezone = Europe/Moscow
+2025-02-13 18:21:59,728 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Djdk.serialFilter=maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000 -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Djava.security.manager=allow -Dorg.jboss.boot.log.file=/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration/logging.properties 
+2025-02-13 18:22:00,038 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.6.0.Final
+2025-02-13 18:22:00,243 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-02-13 18:22:00,249 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.8.16.Final
+2025-02-13 18:22:00,252 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.8.16.Final
+2025-02-13 18:22:00,262 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2025-02-13 18:22:00,263 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-02-13 18:22:00,265 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2025-02-13 18:22:00,266 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-02-13 18:22:00,271 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.2.10.Final
+2025-02-13 18:22:00,271 INFO  [org.jboss.as.connector] (MSC service thread 1-4) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.10.Final)
+2025-02-13 18:22:00,275 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 5.0.29.Final
+2025-02-13 18:22:00,275 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2025-02-13 18:22:00,275 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2025-02-13 18:22:00,276 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "pgJDBC 42.7.5.jar" (runtime-name: "pgJDBC 42.7.5.jar")
+2025-02-13 18:22:00,278 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2025-02-13 18:22:00,280 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 65) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-02-13 18:22:00,281 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-02-13 18:22:00,408 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 18:22:00,409 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 66) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2025-02-13 18:22:00,410 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 18:22:00,410 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = postgres
+2025-02-13 18:22:00,411 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2025-02-13 18:22:00,411 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = postgresql
+2025-02-13 18:22:00,415 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY00023: KeyStore file '/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+2025-02-13 18:22:00,421 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-02-13 18:22:00,422 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2025-02-13 18:22:00,423 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2025-02-13 18:22:00,426 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY01084: KeyStore /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2025-02-13 18:22:00,430 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2025-02-13 18:22:00,446 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 2.3.18.Final starting
+2025-02-13 18:22:00,459 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2025-02-13 18:22:00,459 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2025-02-13 18:22:00,459 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2025-02-13 18:22:00,473 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2025-02-13 18:22:00,475 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) Queuing requests.
+2025-02-13 18:22:00,476 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2025-02-13 18:22:00,493 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2025-02-13 18:22:00,506 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-02-13 18:22:00,515 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "lab3.war" (runtime-name: "lab3.war")
+2025-02-13 18:22:00,526 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/deployments
+2025-02-13 18:22:00,536 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/PostgresDS]
+2025-02-13 18:22:00,536 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-02-13 18:22:00,557 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2025-02-13 18:22:00,624 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 7.2.0.Final (Apache CXF 4.0.5) 
+2025-02-13 18:22:00,901 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 18:22:00,906 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = pgJDBC 42.7.5.jar
+2025-02-13 18:22:01,674 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) WFLYJPA0002: Read persistence.xml for PostgresPU
+2025-02-13 18:22:01,751 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0003: Starting Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 18:22:01,809 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Fine]: server: 2025-02-13 18:22:01.804--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+2025-02-13 18:22:01,843 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:22:01.843--ServerSession(219598007)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The access type for the persistent class [class se.ifmo.db.Point] is set to [FIELD].
+2025-02-13 18:22:01,847 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:22:01.847--ServerSession(219598007)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The alias name for the entity class [class se.ifmo.db.Point] is being defaulted to: Point.
+2025-02-13 18:22:01,848 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:22:01.848--ServerSession(219598007)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The table name for entity [class se.ifmo.db.Point] is being defaulted to: POINT.
+2025-02-13 18:22:01,850 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:22:01.85--ServerSession(219598007)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [result] is being defaulted to: RESULT.
+2025-02-13 18:22:01,852 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:22:01.852--ServerSession(219598007)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [r] is being defaulted to: R.
+2025-02-13 18:22:01,852 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:22:01.852--ServerSession(219598007)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [x] is being defaulted to: X.
+2025-02-13 18:22:01,852 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:22:01.852--ServerSession(219598007)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [y] is being defaulted to: Y.
+2025-02-13 18:22:01,852 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:22:01.852--ServerSession(219598007)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [id] is being defaulted to: ID.
+2025-02-13 18:22:01,866 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment lab3.war
+2025-02-13 18:22:01,983 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 8.0.1.Final
+2025-02-13 18:22:02,090 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 18:22:02,106 INFO  [org.jboss.weld.Version] (MSC service thread 1-7) WELD-000900: 5.1.3 (Final)
+2025-02-13 18:22:02,130 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 18:22:02,464 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 82) Initializing Mojarra 4.0.7 for context '/lab3'
+2025-02-13 18:22:02,708 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/lab3' for server 'default-server'
+2025-02-13 18:22:02,726 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "lab3.war" (runtime-name : "lab3.war")
+2025-02-13 18:22:02,727 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "pgJDBC 42.7.5.jar" (runtime-name : "pgJDBC 42.7.5.jar")
+2025-02-13 18:22:02,743 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-02-13 18:22:02,745 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2025-02-13 18:22:02,745 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2025-02-13 18:22:02,746 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 34.0.0.Final (WildFly Core 26.0.1.Final) started in 3613ms - Started 490 of 694 services (330 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2025-02-13 18:22:03,190 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 18:22:03,190 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0022: Unregistered web context: '/lab3' from server 'default-server'
+2025-02-13 18:22:03,218 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 16) WFLYJPA0004: Stopping Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 18:22:03,226 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment lab3.war (runtime-name: lab3.war) in 37ms
+2025-02-13 18:22:03,243 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "lab3.war" (runtime-name: "lab3.war")
+2025-02-13 18:22:03,268 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "lab3.war" (runtime-name: "lab3.war")
+2025-02-13 18:22:04,035 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for PostgresPU
+2025-02-13 18:22:04,086 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 82) WFLYJPA0003: Starting Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 18:22:04,121 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Fine]: server: 2025-02-13 18:22:04.118--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+2025-02-13 18:22:04,149 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:22:04.149--ServerSession(1114165481)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The access type for the persistent class [class se.ifmo.db.Point] is set to [FIELD].
+2025-02-13 18:22:04,153 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:22:04.153--ServerSession(1114165481)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The alias name for the entity class [class se.ifmo.db.Point] is being defaulted to: Point.
+2025-02-13 18:22:04,154 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:22:04.154--ServerSession(1114165481)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The table name for entity [class se.ifmo.db.Point] is being defaulted to: POINT.
+2025-02-13 18:22:04,156 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:22:04.156--ServerSession(1114165481)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The column name for element [result] is being defaulted to: RESULT.
+2025-02-13 18:22:04,156 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:22:04.156--ServerSession(1114165481)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The column name for element [r] is being defaulted to: R.
+2025-02-13 18:22:04,156 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:22:04.156--ServerSession(1114165481)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The column name for element [x] is being defaulted to: X.
+2025-02-13 18:22:04,156 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:22:04.156--ServerSession(1114165481)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The column name for element [y] is being defaulted to: Y.
+2025-02-13 18:22:04,156 INFO  [stdout] (ServerService Thread Pool -- 82) [EL Config]: metadata: 2025-02-13 18:22:04.156--ServerSession(1114165481)--Thread(Thread[ServerService Thread Pool -- 82,5,ServerService ThreadGroup])--The column name for element [id] is being defaulted to: ID.
+2025-02-13 18:22:04,164 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment lab3.war
+2025-02-13 18:22:04,203 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 18:22:04,214 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 18:22:04,328 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 30) Initializing Mojarra 4.0.7 for context '/lab3'
+2025-02-13 18:22:04,444 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 30) WFLYUT0021: Registered web context: '/lab3' for server 'default-server'
+2025-02-13 18:22:04,453 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "lab3.war" (runtime-name : "lab3.war")
+2025-02-13 18:22:37,239 INFO  [stdout] (default task-1) [EL Warning]: transaction: 2025-02-13 18:22:37.239--ServerSession(1114165481)--Thread(Thread[default task-1,5,main])--PersistenceUnitInfo PostgresPU has transactionType RESOURCE_LOCAL and therefore jtaDataSource will be ignored
+2025-02-13 18:22:37,240 INFO  [stdout] (default task-1) [EL Info]: 2025-02-13 18:22:37.24--ServerSession(1114165481)--Thread(Thread[default task-1,5,main])--EclipseLink, version: Eclipse Persistence Services - 3.0.3.v202208191135
+2025-02-13 18:22:37,346 INFO  [stdout] (default task-1) [EL Fine]: connection: 2025-02-13 18:22:37.346--Thread(Thread[default task-1,5,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+2025-02-13 18:22:37,350 INFO  [stdout] (default task-1) [EL Fine]: connection: 2025-02-13 18:22:37.35--ServerSession(1114165481)--Connection(357392866)--Thread(Thread[default task-1,5,main])--connecting(DatabaseLogin(
+2025-02-13 18:22:37,350 INFO  [stdout] (default task-1) 	platform=>PostgreSQLPlatform
+2025-02-13 18:22:37,350 INFO  [stdout] (default task-1) 	user name=> "postgres"
+2025-02-13 18:22:37,350 INFO  [stdout] (default task-1) 	datasource URL=> "jdbc:postgresql://localhost:5555/postgres"
+2025-02-13 18:22:37,350 INFO  [stdout] (default task-1) ))
+2025-02-13 18:22:37,370 INFO  [stdout] (default task-1) [EL Config]: connection: 2025-02-13 18:22:37.369--ServerSession(1114165481)--Connection(835488600)--Thread(Thread[default task-1,5,main])--Connected: jdbc:postgresql://localhost:5555/postgres
+2025-02-13 18:22:37,370 INFO  [stdout] (default task-1) 	User: postgres
+2025-02-13 18:22:37,370 INFO  [stdout] (default task-1) 	Database: PostgreSQL  Version: 17.2 (Postgres.app)
+2025-02-13 18:22:37,370 INFO  [stdout] (default task-1) 	Driver: PostgreSQL JDBC Driver  Version: 42.7.2
+2025-02-13 18:22:37,384 INFO  [stdout] (default task-1) [EL Fine]: connection: 2025-02-13 18:22:37.384--ServerSession(1114165481)--Thread(Thread[default task-1,5,main])--/vfs:/content/lab3.war/WEB-INF/classes/_PostgresPU login successful
+2025-02-13 18:22:37,474 INFO  [stdout] (default task-1) [EL Fine]: sql: 2025-02-13 18:22:37.474--ServerSession(1114165481)--Connection(835488600)--Thread(Thread[default task-1,5,main])--SELECT ID, R, RESULT, X, Y FROM POINT
+2025-02-13 18:56:06,580 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
+2025-02-13 18:56:06,593 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-02-13 18:56:06,597 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2025-02-13 18:56:06,604 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = pgJDBC 42.7.5.jar
+2025-02-13 18:56:06,628 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 18:56:06,629 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0019: Stopped Driver service with driver-name = postgres
+2025-02-13 18:56:06,631 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2025-02-13 18:56:06,634 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 87) WFLYUT0022: Unregistered web context: '/lab3' from server 'default-server'
+2025-02-13 18:56:06,641 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2025-02-13 18:56:06,643 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment pgJDBC 42.7.5.jar (runtime-name: pgJDBC 42.7.5.jar) in 20ms
+2025-02-13 18:56:06,646 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2025-02-13 18:56:06,647 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2025-02-13 18:56:06,647 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 85) WFLYJPA0004: Stopping Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 18:56:06,648 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Fine]: connection: 2025-02-13 18:56:06.648--ServerSession(1114165481)--Connection(835488600)--Thread(Thread[ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--disconnect
+2025-02-13 18:56:06,649 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Fine]: connection: 2025-02-13 18:56:06.648--ServerSession(1114165481)--Thread(Thread[ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--/vfs:/content/lab3.war/WEB-INF/classes/_PostgresPU logout successful
+2025-02-13 18:56:06,649 INFO  [stdout] (ServerService Thread Pool -- 85) [EL Fine]: connection: 2025-02-13 18:56:06.649--ServerSession(1114165481)--Connection(357392866)--Thread(Thread[ServerService Thread Pool -- 85,5,ServerService ThreadGroup])--disconnect
+2025-02-13 18:56:06,649 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/PostgresDS]
+2025-02-13 18:56:06,649 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = postgresql
+2025-02-13 18:56:06,650 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2025-02-13 18:56:06,650 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2025-02-13 18:56:06,651 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2025-02-13 18:56:06,651 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2025-02-13 18:56:06,651 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.3.18.Final stopping
+2025-02-13 18:56:06,666 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment lab3.war (runtime-name: lab3.war) in 43ms
+2025-02-13 18:56:06,668 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly 34.0.0.Final (WildFly Core 26.0.1.Final) stopped in 64ms
+2025-02-13 18:56:09,656 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.5.Final
+2025-02-13 18:56:09,922 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
+2025-02-13 18:56:09,925 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2025-02-13 18:56:09,972 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly 34.0.0.Final (WildFly Core 26.0.1.Final) starting
+2025-02-13 18:56:09,972 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/xy/72t2pzgx7bl70lc537_wphz40000gn/T/
+	java.library.path = /Users/nokia208dualsim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.8.1+1
+	java.security.manager = allow
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.8.1+1
+	java.version = 17.0.8.1
+	java.version.date = 2023-08-24
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.8.1+1
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final
+	jboss.host.name = macbook-air-nokia
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = macbook-air-nokia
+	jboss.qualified.host.name = macbook-air-nokia.local
+	jboss.server.base.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone
+	jboss.server.config.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration
+	jboss.server.data.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/data
+	jboss.server.log.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/log
+	jboss.server.name = macbook-air-nokia
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/tmp
+	jdk.debug = release
+	jdk.serialFilter = maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000
+	line.separator = 
+
+	logging.configuration = file:/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration/logging.properties
+	module.path = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = aarch64
+	os.name = Mac OS X
+	os.version = 14.2.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/jboss-modules.jar -mp /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final -Djboss.server.base.dir=/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = RU
+	user.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/bin
+	user.home = /Users/nokia208dualsim
+	user.language = ru
+	user.name = nokia208dualsim
+	user.timezone = Europe/Moscow
+2025-02-13 18:56:09,973 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -D[Standalone] -Djdk.serialFilter=maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000 -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Djava.security.manager=allow -Dorg.jboss.boot.log.file=/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration/logging.properties 
+2025-02-13 18:56:10,302 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.6.0.Final
+2025-02-13 18:56:10,511 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-02-13 18:56:10,517 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.8.16.Final
+2025-02-13 18:56:10,520 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.8.16.Final
+2025-02-13 18:56:10,531 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2025-02-13 18:56:10,534 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-02-13 18:56:10,535 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-02-13 18:56:10,536 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2025-02-13 18:56:10,539 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "pgJDBC 42.7.5.jar" (runtime-name: "pgJDBC 42.7.5.jar")
+2025-02-13 18:56:10,541 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.2.10.Final
+2025-02-13 18:56:10,541 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.10.Final)
+2025-02-13 18:56:10,544 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 65) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-02-13 18:56:10,545 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 5.0.29.Final
+2025-02-13 18:56:10,546 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 66) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2025-02-13 18:56:10,547 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2025-02-13 18:56:10,548 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-02-13 18:56:10,549 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2025-02-13 18:56:10,550 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2025-02-13 18:56:10,555 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2025-02-13 18:56:10,554 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-02-13 18:56:10,559 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-7) WFLYELY00023: KeyStore file '/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+2025-02-13 18:56:10,564 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 18:56:10,570 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = postgres
+2025-02-13 18:56:10,571 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 18:56:10,573 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = postgresql
+2025-02-13 18:56:10,573 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-5) WFLYELY01084: KeyStore /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2025-02-13 18:56:10,573 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2025-02-13 18:56:10,574 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2025-02-13 18:56:10,575 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-6) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2025-02-13 18:56:10,588 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 2.3.18.Final starting
+2025-02-13 18:56:10,596 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2025-02-13 18:56:10,596 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2025-02-13 18:56:10,606 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2025-02-13 18:56:10,607 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2025-02-13 18:56:10,608 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) Queuing requests.
+2025-02-13 18:56:10,609 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2025-02-13 18:56:10,621 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2025-02-13 18:56:10,650 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "lab3.war" (runtime-name: "lab3.war")
+2025-02-13 18:56:10,654 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-02-13 18:56:10,657 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-8) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/deployments
+2025-02-13 18:56:10,661 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2025-02-13 18:56:10,682 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/PostgresDS]
+2025-02-13 18:56:10,682 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-02-13 18:56:10,714 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 7.2.0.Final (Apache CXF 4.0.5) 
+2025-02-13 18:56:10,986 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 18:56:10,991 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = pgJDBC 42.7.5.jar
+2025-02-13 18:56:11,844 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for PostgresPU
+2025-02-13 18:56:11,924 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0003: Starting Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 18:56:11,994 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Fine]: server: 2025-02-13 18:56:11.99--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+2025-02-13 18:56:12,026 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:56:12.026--ServerSession(1724867946)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The access type for the persistent class [class se.ifmo.db.Point] is set to [FIELD].
+2025-02-13 18:56:12,030 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:56:12.03--ServerSession(1724867946)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The alias name for the entity class [class se.ifmo.db.Point] is being defaulted to: Point.
+2025-02-13 18:56:12,031 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:56:12.031--ServerSession(1724867946)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The table name for entity [class se.ifmo.db.Point] is being defaulted to: POINT.
+2025-02-13 18:56:12,033 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:56:12.033--ServerSession(1724867946)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [result] is being defaulted to: RESULT.
+2025-02-13 18:56:12,034 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:56:12.034--ServerSession(1724867946)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [r] is being defaulted to: R.
+2025-02-13 18:56:12,034 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:56:12.034--ServerSession(1724867946)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [x] is being defaulted to: X.
+2025-02-13 18:56:12,034 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:56:12.034--ServerSession(1724867946)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [y] is being defaulted to: Y.
+2025-02-13 18:56:12,034 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 18:56:12.034--ServerSession(1724867946)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [id] is being defaulted to: ID.
+2025-02-13 18:56:12,048 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment lab3.war
+2025-02-13 18:56:12,179 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-6) HV000001: Hibernate Validator 8.0.1.Final
+2025-02-13 18:56:12,290 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 18:56:12,302 INFO  [org.jboss.weld.Version] (MSC service thread 1-6) WELD-000900: 5.1.3 (Final)
+2025-02-13 18:56:12,325 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 18:56:12,673 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 81) Initializing Mojarra 4.0.7 for context '/lab3'
+2025-02-13 18:56:12,896 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 81) WFLYUT0021: Registered web context: '/lab3' for server 'default-server'
+2025-02-13 18:56:12,915 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "lab3.war" (runtime-name : "lab3.war")
+2025-02-13 18:56:12,915 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "pgJDBC 42.7.5.jar" (runtime-name : "pgJDBC 42.7.5.jar")
+2025-02-13 18:56:12,932 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-02-13 18:56:12,934 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2025-02-13 18:56:12,934 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2025-02-13 18:56:12,935 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 34.0.0.Final (WildFly Core 26.0.1.Final) started in 3528ms - Started 490 of 694 services (330 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2025-02-13 18:56:13,376 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 18:56:13,377 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 81) WFLYUT0022: Unregistered web context: '/lab3' from server 'default-server'
+2025-02-13 18:56:13,402 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 24) WFLYJPA0004: Stopping Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 18:56:13,410 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment lab3.war (runtime-name: lab3.war) in 35ms
+2025-02-13 18:56:13,431 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "lab3.war" (runtime-name: "lab3.war")
+2025-02-13 18:56:13,457 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "lab3.war" (runtime-name: "lab3.war")
+2025-02-13 18:56:14,289 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for PostgresPU
+2025-02-13 18:56:14,340 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 81) WFLYJPA0003: Starting Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 18:56:14,386 INFO  [stdout] (ServerService Thread Pool -- 81) [EL Fine]: server: 2025-02-13 18:56:14.383--Thread(Thread[ServerService Thread Pool -- 81,5,ServerService ThreadGroup])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+2025-02-13 18:56:14,413 INFO  [stdout] (ServerService Thread Pool -- 81) [EL Config]: metadata: 2025-02-13 18:56:14.412--ServerSession(1813674063)--Thread(Thread[ServerService Thread Pool -- 81,5,ServerService ThreadGroup])--The access type for the persistent class [class se.ifmo.db.Point] is set to [FIELD].
+2025-02-13 18:56:14,416 INFO  [stdout] (ServerService Thread Pool -- 81) [EL Config]: metadata: 2025-02-13 18:56:14.416--ServerSession(1813674063)--Thread(Thread[ServerService Thread Pool -- 81,5,ServerService ThreadGroup])--The alias name for the entity class [class se.ifmo.db.Point] is being defaulted to: Point.
+2025-02-13 18:56:14,417 INFO  [stdout] (ServerService Thread Pool -- 81) [EL Config]: metadata: 2025-02-13 18:56:14.417--ServerSession(1813674063)--Thread(Thread[ServerService Thread Pool -- 81,5,ServerService ThreadGroup])--The table name for entity [class se.ifmo.db.Point] is being defaulted to: POINT.
+2025-02-13 18:56:14,419 INFO  [stdout] (ServerService Thread Pool -- 81) [EL Config]: metadata: 2025-02-13 18:56:14.419--ServerSession(1813674063)--Thread(Thread[ServerService Thread Pool -- 81,5,ServerService ThreadGroup])--The column name for element [result] is being defaulted to: RESULT.
+2025-02-13 18:56:14,419 INFO  [stdout] (ServerService Thread Pool -- 81) [EL Config]: metadata: 2025-02-13 18:56:14.419--ServerSession(1813674063)--Thread(Thread[ServerService Thread Pool -- 81,5,ServerService ThreadGroup])--The column name for element [r] is being defaulted to: R.
+2025-02-13 18:56:14,419 INFO  [stdout] (ServerService Thread Pool -- 81) [EL Config]: metadata: 2025-02-13 18:56:14.419--ServerSession(1813674063)--Thread(Thread[ServerService Thread Pool -- 81,5,ServerService ThreadGroup])--The column name for element [x] is being defaulted to: X.
+2025-02-13 18:56:14,419 INFO  [stdout] (ServerService Thread Pool -- 81) [EL Config]: metadata: 2025-02-13 18:56:14.419--ServerSession(1813674063)--Thread(Thread[ServerService Thread Pool -- 81,5,ServerService ThreadGroup])--The column name for element [y] is being defaulted to: Y.
+2025-02-13 18:56:14,420 INFO  [stdout] (ServerService Thread Pool -- 81) [EL Config]: metadata: 2025-02-13 18:56:14.42--ServerSession(1813674063)--Thread(Thread[ServerService Thread Pool -- 81,5,ServerService ThreadGroup])--The column name for element [id] is being defaulted to: ID.
+2025-02-13 18:56:14,427 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) WFLYWELD0003: Processing weld deployment lab3.war
+2025-02-13 18:56:14,462 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 18:56:14,473 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 18:56:14,563 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 81) Initializing Mojarra 4.0.7 for context '/lab3'
+2025-02-13 18:56:14,678 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 81) WFLYUT0021: Registered web context: '/lab3' for server 'default-server'
+2025-02-13 18:56:14,684 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "lab3.war" (runtime-name : "lab3.war")
+2025-02-13 19:48:07,716 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
+2025-02-13 19:48:07,732 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-02-13 19:48:07,737 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2025-02-13 19:48:07,748 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = pgJDBC 42.7.5.jar
+2025-02-13 19:48:07,749 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 19:48:07,751 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = postgres
+2025-02-13 19:48:07,752 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2025-02-13 19:48:07,753 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 85) WFLYUT0022: Unregistered web context: '/lab3' from server 'default-server'
+2025-02-13 19:48:07,759 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2025-02-13 19:48:07,763 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment pgJDBC 42.7.5.jar (runtime-name: pgJDBC 42.7.5.jar) in 15ms
+2025-02-13 19:48:07,774 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2025-02-13 19:48:07,776 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2025-02-13 19:48:07,777 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 86) WFLYJPA0004: Stopping Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 19:48:07,780 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/PostgresDS]
+2025-02-13 19:48:07,781 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = postgresql
+2025-02-13 19:48:07,781 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTPS listener https suspending
+2025-02-13 19:48:07,781 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2025-02-13 19:48:07,783 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2025-02-13 19:48:07,783 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2025-02-13 19:48:07,784 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0004: Undertow 2.3.18.Final stopping
+2025-02-13 19:48:07,798 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment lab3.war (runtime-name: lab3.war) in 49ms
+2025-02-13 19:48:07,800 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly 34.0.0.Final (WildFly Core 26.0.1.Final) stopped in 54ms
+2025-02-13 19:48:10,773 INFO  [org.jboss.modules] (main) JBoss Modules version 2.1.5.Final
+2025-02-13 19:48:11,090 INFO  [org.jboss.msc] (main) JBoss MSC version 1.5.5.Final
+2025-02-13 19:48:11,095 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2025-02-13 19:48:11,155 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly 34.0.0.Final (WildFly Core 26.0.1.Final) starting
+2025-02-13 19:48:11,157 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	file.encoding = UTF-8
+	file.separator = /
+	ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	java.awt.headless = true
+	java.class.path = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/jboss-modules.jar
+	java.class.version = 61.0
+	java.home = /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+	java.io.tmpdir = /var/folders/xy/72t2pzgx7bl70lc537_wphz40000gn/T/
+	java.library.path = /Users/nokia208dualsim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 17.0.8.1+1
+	java.security.manager = allow
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 17
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Eclipse Adoptium
+	java.vendor.url = https://adoptium.net/
+	java.vendor.url.bug = https://github.com/adoptium/adoptium-support/issues
+	java.vendor.version = Temurin-17.0.8.1+1
+	java.version = 17.0.8.1
+	java.version.date = 2023-08-24
+	java.vm.compressedOopsMode = Zero based
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 17
+	java.vm.vendor = Eclipse Adoptium
+	java.vm.version = 17.0.8.1+1
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.home.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final
+	jboss.host.name = macbook-air-nokia
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = macbook-air-nokia
+	jboss.qualified.host.name = macbook-air-nokia.local
+	jboss.server.base.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone
+	jboss.server.config.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration
+	jboss.server.data.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/data
+	jboss.server.log.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/log
+	jboss.server.name = macbook-air-nokia
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/tmp
+	jdk.debug = release
+	jdk.serialFilter = maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000
+	line.separator = 
+
+	logging.configuration = file:/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration/logging.properties
+	module.path = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/modules
+	native.encoding = UTF-8
+	org.jboss.boot.log.file = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	os.arch = aarch64
+	os.name = Mac OS X
+	os.version = 14.2.1
+	path.separator = :
+	socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+	sun.arch.data.model = 64
+	sun.boot.library.path = /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/lib
+	sun.cpu.endian = little
+	sun.io.unicode.encoding = UnicodeBig
+	sun.java.command = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/jboss-modules.jar -mp /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/modules org.jboss.as.standalone -Djboss.home.dir=/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final -Djboss.server.base.dir=/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	user.country = RU
+	user.dir = /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/bin
+	user.home = /Users/nokia208dualsim
+	user.language = ru
+	user.name = nokia208dualsim
+	user.timezone = Europe/Moscow
+2025-02-13 19:48:11,157 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Djdk.serialFilter=maxbytes=10485760;maxdepth=128;maxarray=100000;maxrefs=300000 -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldap=ALL-UNNAMED --add-exports=java.naming/com.sun.jndi.url.ldaps=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.management/javax.management=ALL-UNNAMED --add-opens=java.naming/javax.naming=ALL-UNNAMED -Djava.security.manager=allow -Dorg.jboss.boot.log.file=/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/log/server.log -Dlogging.configuration=file:/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration/logging.properties 
+2025-02-13 19:48:11,511 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 2.6.0.Final
+2025-02-13 19:48:11,787 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2025-02-13 19:48:11,793 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.8.16.Final
+2025-02-13 19:48:11,797 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.8.16.Final
+2025-02-13 19:48:11,808 INFO  [org.wildfly.extension.elytron.oidc._private] (ServerService Thread Pool -- 53) WFLYOIDC0001: Activating WildFly Elytron OIDC Subsystem
+2025-02-13 19:48:11,810 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2025-02-13 19:48:11,812 INFO  [org.wildfly.extension.health] (ServerService Thread Pool -- 54) WFLYHEALTH0001: Activating Base Health Subsystem
+2025-02-13 19:48:11,817 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 16 IO threads with 128 max task threads based on your 8 available processors
+2025-02-13 19:48:11,819 INFO  [org.wildfly.extension.microprofile.config.smallrye] (ServerService Thread Pool -- 65) WFLYCONF0001: Activating MicroProfile Config Subsystem
+2025-02-13 19:48:11,820 INFO  [org.wildfly.extension.microprofile.jwt.smallrye] (ServerService Thread Pool -- 66) WFLYJWT0001: Activating MicroProfile JWT Subsystem
+2025-02-13 19:48:11,824 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 57) WFLYRS0016: RESTEasy version 6.2.10.Final
+2025-02-13 19:48:11,825 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 67) WFLYNAM0001: Activating Naming Subsystem
+2025-02-13 19:48:11,825 INFO  [org.wildfly.extension.metrics] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Base Metrics Subsystem
+2025-02-13 19:48:11,827 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2025-02-13 19:48:11,829 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 62) WFLYJSF0007: Activated the following Jakarta Server Faces Implementations: [main]
+2025-02-13 19:48:11,834 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting Jakarta Connectors Subsystem (WildFly/IronJacamar 3.0.10.Final)
+2025-02-13 19:48:11,835 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "pgJDBC 42.7.5.jar" (runtime-name: "pgJDBC 42.7.5.jar")
+2025-02-13 19:48:11,846 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 2.2)
+2025-02-13 19:48:11,852 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2025-02-13 19:48:11,860 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 5.0.29.Final
+2025-02-13 19:48:11,860 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 19:48:11,864 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = h2
+2025-02-13 19:48:11,865 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0018: Started Driver service with driver-name = postgres
+2025-02-13 19:48:11,866 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2025-02-13 19:48:11,867 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2025-02-13 19:48:11,869 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 19:48:11,869 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = postgresql
+2025-02-13 19:48:11,872 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-4) WFLYELY00023: KeyStore file '/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration/application.keystore' does not exist. Used blank.
+2025-02-13 19:48:11,893 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 2.3.18.Final starting
+2025-02-13 19:48:11,895 WARN  [org.wildfly.extension.elytron] (MSC service thread 1-1) WFLYELY01084: KeyStore /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/configuration/application.keystore not found, it will be auto-generated on first use with a self-signed certificate for host localhost
+2025-02-13 19:48:11,925 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 32 (per class), which is derived from the number of CPUs on this host.
+2025-02-13 19:48:11,925 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 128 (per class), which is derived from thread worker pool sizing.
+2025-02-13 19:48:11,935 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path '/Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2025-02-13 19:48:11,939 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2025-02-13 19:48:11,940 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) Queuing requests.
+2025-02-13 19:48:11,940 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2025-02-13 19:48:11,963 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2025-02-13 19:48:11,981 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "lab3.war" (runtime-name: "lab3.war")
+2025-02-13 19:48:11,993 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /Users/nokia208dualsim/Documents/GitHub/itmo/web/lab3/wildfly-34.0.0.Final/standalone/deployments
+2025-02-13 19:48:11,997 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-02-13 19:48:12,036 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2025-02-13 19:48:12,049 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/PostgresDS]
+2025-02-13 19:48:12,049 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2025-02-13 19:48:12,106 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 7.2.0.Final (Apache CXF 4.0.5) 
+2025-02-13 19:48:12,504 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 19:48:12,511 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = pgJDBC 42.7.5.jar
+2025-02-13 19:48:13,867 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) WFLYJPA0002: Read persistence.xml for PostgresPU
+2025-02-13 19:48:13,983 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0003: Starting Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 19:48:14,070 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Fine]: server: 2025-02-13 19:48:14.062--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+2025-02-13 19:48:14,135 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 19:48:14.134--ServerSession(1303835996)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The access type for the persistent class [class se.ifmo.db.Point] is set to [FIELD].
+2025-02-13 19:48:14,146 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 19:48:14.146--ServerSession(1303835996)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The alias name for the entity class [class se.ifmo.db.Point] is being defaulted to: Point.
+2025-02-13 19:48:14,147 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 19:48:14.147--ServerSession(1303835996)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The table name for entity [class se.ifmo.db.Point] is being defaulted to: POINT.
+2025-02-13 19:48:14,151 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 19:48:14.151--ServerSession(1303835996)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [result] is being defaulted to: RESULT.
+2025-02-13 19:48:14,152 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 19:48:14.151--ServerSession(1303835996)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [r] is being defaulted to: R.
+2025-02-13 19:48:14,152 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 19:48:14.152--ServerSession(1303835996)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [x] is being defaulted to: X.
+2025-02-13 19:48:14,152 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 19:48:14.152--ServerSession(1303835996)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [y] is being defaulted to: Y.
+2025-02-13 19:48:14,152 INFO  [stdout] (ServerService Thread Pool -- 78) [EL Config]: metadata: 2025-02-13 19:48:14.152--ServerSession(1303835996)--Thread(Thread[ServerService Thread Pool -- 78,5,ServerService ThreadGroup])--The column name for element [id] is being defaulted to: ID.
+2025-02-13 19:48:14,178 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment lab3.war
+2025-02-13 19:48:14,335 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 8.0.1.Final
+2025-02-13 19:48:14,489 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 19:48:14,505 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 5.1.3 (Final)
+2025-02-13 19:48:14,532 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 19:48:14,965 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 80) Initializing Mojarra 4.0.7 for context '/lab3'
+2025-02-13 19:48:15,246 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 80) WFLYUT0021: Registered web context: '/lab3' for server 'default-server'
+2025-02-13 19:48:15,269 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "lab3.war" (runtime-name : "lab3.war")
+2025-02-13 19:48:15,269 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "pgJDBC 42.7.5.jar" (runtime-name : "pgJDBC 42.7.5.jar")
+2025-02-13 19:48:15,290 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2025-02-13 19:48:15,294 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2025-02-13 19:48:15,294 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2025-02-13 19:48:15,295 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly 34.0.0.Final (WildFly Core 26.0.1.Final) started in 4805ms - Started 490 of 694 services (330 services are lazy, passive or on-demand) - Server configuration file in use: standalone.xml - Minimum feature stability level: community
+2025-02-13 19:48:15,610 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 19:48:15,612 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 80) WFLYUT0022: Unregistered web context: '/lab3' from server 'default-server'
+2025-02-13 19:48:15,645 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 80) WFLYJPA0004: Stopping Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 19:48:15,654 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment lab3.war (runtime-name: lab3.war) in 45ms
+2025-02-13 19:48:15,674 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0009: Undeployed "lab3.war" (runtime-name: "lab3.war")
+2025-02-13 19:48:15,716 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "lab3.war" (runtime-name: "lab3.war")
+2025-02-13 19:48:16,751 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for PostgresPU
+2025-02-13 19:48:16,825 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 32) WFLYJPA0003: Starting Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 19:48:16,880 INFO  [stdout] (ServerService Thread Pool -- 32) [EL Fine]: server: 2025-02-13 19:48:16.876--Thread(Thread[ServerService Thread Pool -- 32,5,ServerService ThreadGroup])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+2025-02-13 19:48:16,925 INFO  [stdout] (ServerService Thread Pool -- 32) [EL Config]: metadata: 2025-02-13 19:48:16.924--ServerSession(635095899)--Thread(Thread[ServerService Thread Pool -- 32,5,ServerService ThreadGroup])--The access type for the persistent class [class se.ifmo.db.Point] is set to [FIELD].
+2025-02-13 19:48:16,932 INFO  [stdout] (ServerService Thread Pool -- 32) [EL Config]: metadata: 2025-02-13 19:48:16.931--ServerSession(635095899)--Thread(Thread[ServerService Thread Pool -- 32,5,ServerService ThreadGroup])--The alias name for the entity class [class se.ifmo.db.Point] is being defaulted to: Point.
+2025-02-13 19:48:16,932 INFO  [stdout] (ServerService Thread Pool -- 32) [EL Config]: metadata: 2025-02-13 19:48:16.932--ServerSession(635095899)--Thread(Thread[ServerService Thread Pool -- 32,5,ServerService ThreadGroup])--The table name for entity [class se.ifmo.db.Point] is being defaulted to: POINT.
+2025-02-13 19:48:16,936 INFO  [stdout] (ServerService Thread Pool -- 32) [EL Config]: metadata: 2025-02-13 19:48:16.936--ServerSession(635095899)--Thread(Thread[ServerService Thread Pool -- 32,5,ServerService ThreadGroup])--The column name for element [result] is being defaulted to: RESULT.
+2025-02-13 19:48:16,937 INFO  [stdout] (ServerService Thread Pool -- 32) [EL Config]: metadata: 2025-02-13 19:48:16.937--ServerSession(635095899)--Thread(Thread[ServerService Thread Pool -- 32,5,ServerService ThreadGroup])--The column name for element [r] is being defaulted to: R.
+2025-02-13 19:48:16,937 INFO  [stdout] (ServerService Thread Pool -- 32) [EL Config]: metadata: 2025-02-13 19:48:16.937--ServerSession(635095899)--Thread(Thread[ServerService Thread Pool -- 32,5,ServerService ThreadGroup])--The column name for element [x] is being defaulted to: X.
+2025-02-13 19:48:16,937 INFO  [stdout] (ServerService Thread Pool -- 32) [EL Config]: metadata: 2025-02-13 19:48:16.937--ServerSession(635095899)--Thread(Thread[ServerService Thread Pool -- 32,5,ServerService ThreadGroup])--The column name for element [y] is being defaulted to: Y.
+2025-02-13 19:48:16,937 INFO  [stdout] (ServerService Thread Pool -- 32) [EL Config]: metadata: 2025-02-13 19:48:16.937--ServerSession(635095899)--Thread(Thread[ServerService Thread Pool -- 32,5,ServerService ThreadGroup])--The column name for element [id] is being defaulted to: ID.
+2025-02-13 19:48:16,950 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment lab3.war
+2025-02-13 19:48:17,013 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 42.7)
+2025-02-13 19:48:17,034 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 19:48:17,165 INFO  [jakarta.enterprise.resource.webcontainer.faces.config] (ServerService Thread Pool -- 32) Initializing Mojarra 4.0.7 for context '/lab3'
+2025-02-13 19:48:17,352 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 32) WFLYUT0021: Registered web context: '/lab3' for server 'default-server'
+2025-02-13 19:48:17,362 INFO  [org.jboss.as.server] (management-handler-thread - 1) WFLYSRV0010: Deployed "lab3.war" (runtime-name : "lab3.war")
+2025-02-13 19:48:20,225 INFO  [stdout] (default task-1) [EL Warning]: transaction: 2025-02-13 19:48:20.225--ServerSession(635095899)--Thread(Thread[default task-1,5,main])--PersistenceUnitInfo PostgresPU has transactionType RESOURCE_LOCAL and therefore jtaDataSource will be ignored
+2025-02-13 19:48:20,227 INFO  [stdout] (default task-1) [EL Info]: 2025-02-13 19:48:20.227--ServerSession(635095899)--Thread(Thread[default task-1,5,main])--EclipseLink, version: Eclipse Persistence Services - 3.0.3.v202208191135
+2025-02-13 19:48:20,304 INFO  [stdout] (default task-1) [EL Fine]: connection: 2025-02-13 19:48:20.303--Thread(Thread[default task-1,5,main])--Detected database platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+2025-02-13 19:48:20,307 INFO  [stdout] (default task-1) [EL Fine]: connection: 2025-02-13 19:48:20.307--ServerSession(635095899)--Connection(602127978)--Thread(Thread[default task-1,5,main])--connecting(DatabaseLogin(
+2025-02-13 19:48:20,308 INFO  [stdout] (default task-1) 	platform=>PostgreSQLPlatform
+2025-02-13 19:48:20,308 INFO  [stdout] (default task-1) 	user name=> "postgres"
+2025-02-13 19:48:20,308 INFO  [stdout] (default task-1) 	datasource URL=> "jdbc:postgresql://localhost:5555/postgres"
+2025-02-13 19:48:20,308 INFO  [stdout] (default task-1) ))
+2025-02-13 19:48:20,326 INFO  [stdout] (default task-1) [EL Config]: connection: 2025-02-13 19:48:20.326--ServerSession(635095899)--Connection(658852520)--Thread(Thread[default task-1,5,main])--Connected: jdbc:postgresql://localhost:5555/postgres
+2025-02-13 19:48:20,326 INFO  [stdout] (default task-1) 	User: postgres
+2025-02-13 19:48:20,326 INFO  [stdout] (default task-1) 	Database: PostgreSQL  Version: 17.2 (Postgres.app)
+2025-02-13 19:48:20,326 INFO  [stdout] (default task-1) 	Driver: PostgreSQL JDBC Driver  Version: 42.7.2
+2025-02-13 19:48:20,344 INFO  [stdout] (default task-1) [EL Fine]: connection: 2025-02-13 19:48:20.344--ServerSession(635095899)--Thread(Thread[default task-1,5,main])--/vfs:/content/lab3.war/WEB-INF/classes/_PostgresPU login successful
+2025-02-13 19:48:20,478 INFO  [stdout] (default task-1) [EL Fine]: sql: 2025-02-13 19:48:20.477--ServerSession(635095899)--Connection(658852520)--Thread(Thread[default task-1,5,main])--SELECT ID, R, RESULT, X, Y FROM POINT
+2025-02-13 20:41:47,493 INFO  [org.jboss.as.server] (management-handler-thread - 2) WFLYSRV0272: Suspending server
+2025-02-13 20:41:47,506 INFO  [org.jboss.as.ejb3] (management-handler-thread - 2) WFLYEJB0493: Jakarta Enterprise Beans subsystem suspension complete
+2025-02-13 20:41:47,508 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2025-02-13 20:41:47,522 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = lab3.war_org.postgresql.Driver_42_7
+2025-02-13 20:41:47,523 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = postgres
+2025-02-13 20:41:47,523 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = pgJDBC 42.7.5.jar
+2025-02-13 20:41:47,525 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2025-02-13 20:41:47,527 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 84) WFLYUT0022: Unregistered web context: '/lab3' from server 'default-server'
+2025-02-13 20:41:47,539 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2025-02-13 20:41:47,542 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment pgJDBC 42.7.5.jar (runtime-name: pgJDBC 42.7.5.jar) in 26ms
+2025-02-13 20:41:47,545 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2025-02-13 20:41:47,548 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2025-02-13 20:41:47,548 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 86) WFLYJPA0004: Stopping Persistence Unit Service 'lab3.war#PostgresPU'
+2025-02-13 20:41:47,552 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Fine]: connection: 2025-02-13 20:41:47.551--ServerSession(635095899)--Connection(658852520)--Thread(Thread[ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--disconnect
+2025-02-13 20:41:47,552 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Fine]: connection: 2025-02-13 20:41:47.552--ServerSession(635095899)--Thread(Thread[ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--/vfs:/content/lab3.war/WEB-INF/classes/_PostgresPU logout successful
+2025-02-13 20:41:47,552 INFO  [stdout] (ServerService Thread Pool -- 86) [EL Fine]: connection: 2025-02-13 20:41:47.552--ServerSession(635095899)--Connection(602127978)--Thread(Thread[ServerService Thread Pool -- 86,5,ServerService ThreadGroup])--disconnect
+2025-02-13 20:41:47,553 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/PostgresDS]
+2025-02-13 20:41:47,554 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = postgresql
+2025-02-13 20:41:47,555 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2025-02-13 20:41:47,555 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2025-02-13 20:41:47,555 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2025-02-13 20:41:47,556 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2025-02-13 20:41:47,558 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 2.3.18.Final stopping
+2025-02-13 20:41:47,571 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment lab3.war (runtime-name: lab3.war) in 56ms
+2025-02-13 20:41:47,573 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly 34.0.0.Final (WildFly Core 26.0.1.Final) stopped in 59ms
