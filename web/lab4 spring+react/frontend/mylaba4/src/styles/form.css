@@ -1,0 +1,137 @@
+/* Основной стиль для формы */
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирует содержимое по горизонтали */
+    justify-content: center; /* Центрирует содержимое по вертикали (если нужно) */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок формы */
+
+h3 {
+    text-align: center; /* Центрирует текст внутри элемента */
+    margin: 0; /* Убирает лишние отступы */
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Контейнер для ввода координат X */
+label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Контейнер для чекбоксов */
+div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Чекбоксы и их лейблы */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+label > input {
+    margin-right: 8px;
+}
+
+/* Поле для ввода Y */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Ошибки валидации */
+div > div {
+    color: #050000;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Кнопка отправки */
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ba34d8;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ba34d8;
+}
+
+button[type="submit"][disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button[type="reset"]:hover {
+    background-color: #ba34d8;
+}
+
+button[type="reset"][disabled] {
+    background-color: #ba34d8;
+    cursor: not-allowed;
+}
+
+button[type="reset"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ba34d8;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="button"]:hover {
+    background-color: #ba34d8;
+}
+
+button[type="button"][disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button[type="button"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ba34d8;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

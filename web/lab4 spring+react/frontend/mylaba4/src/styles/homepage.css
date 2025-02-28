@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #dbdbdb;
+    color: #333;
+}
+
+.header{
+    text-align: center;
+}
+
+.header {
+    width: 100%; /* Убедимся, что ширина header равна ширине окна */
+    background: #ba34d8;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 0; /* Убираем отступы, если они есть */
+}
+
+/* Общие стили для всей страницы */
+h3 {
+    color: #ba34d8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputAndPlot {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.trash {
+    margin: 0;
+}

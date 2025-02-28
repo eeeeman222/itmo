@@ -1,0 +1,40 @@
+/* Общий стиль для таблицы */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+/* Заголовки таблицы */
+.table th {
+    background-color: #ba34d8;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Ячейки таблицы */
+.table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Чередование цветов строк */
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Ховер-эффект для строк */
+.table tr:hover {
+    background-color: #ddd;
+}

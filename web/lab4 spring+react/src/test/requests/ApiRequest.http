@@ -1,0 +1,7 @@
+POST http://localhost:8080/api/auth/reg
+Content-Type: application/json
+
+{
+  "username": "kkkjkkk",
+  "password": "uuuu"
+}
